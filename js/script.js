@@ -1,7 +1,9 @@
 let button = document.getElementById( "icono" );
 let links = document.getElementById( "enlaces" );
 let contador = 0;
-button.addEventListener( "click", function(){
+button.addEventListener( "click", function( e ){
+
+	e.preventDefault();
 
 	if( contador == 0 ){
 
